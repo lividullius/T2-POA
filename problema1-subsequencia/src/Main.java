@@ -33,10 +33,11 @@ public class Main {
         System.out.println();
 
         long inicio = System.nanoTime();
-        System.out.println("Resultado: " + VerificaSubsequencia.hasTrend(S, S_line));
+        boolean hasTrend = VerificaSubsequencia.hasTrend(S, S_line);
         long fim = System.nanoTime();
+        System.out.println("Resultado: " + hasTrend);
         System.out.println("Numero de iteracoes: " + VerificaSubsequencia.getIteracoes());
-        System.out.println("Tempo de execucao: " + ((fim - inicio)/1e6) + "s");
+        System.out.printf("Tempo de execucao: %.6f ms%n", (fim - inicio) / 1e6);
         contador++;
     }
 }
