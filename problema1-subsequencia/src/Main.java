@@ -2,6 +2,7 @@ import java.util.Arrays;
 
 public class Main {
     static int contador = 1;
+    // Executa os casos de teste
     public static void main(String[] args) {
         String[] S = {"buy Amazon", "buy Google", "buy Apple",
                       "buy Google", "buy Google", "buy NVIDIA"};
@@ -25,6 +26,7 @@ public class Main {
         executaTeste(S, S);
     }
 
+    // Roda hasTrend e imprime o resultado, o número de iterações e o tempo
     public static void executaTeste(String[] S, String[] S_line){
         System.out.println("----------------------------------------------------------------------------");
         System.out.println("Teste " + contador);

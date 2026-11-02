@@ -5,7 +5,6 @@ Repositório para desenvolvimento do T2 de POA (Projeto e Otimização de Algori
 
 ```
 T2-POA/
-├── enunciado/                 # PDF do enunciado do trabalho
 ├── problema1-subsequencia/    # Problema 1: detectar se S' é subsequência de S (greedy)
 │   └── src/                   # boolean hasTrend(String[] S, String[] S_line)
 ├── problema2-strassen/        # Problema 2: multiplicação de matrizes de Strassen (divisão e conquista)
