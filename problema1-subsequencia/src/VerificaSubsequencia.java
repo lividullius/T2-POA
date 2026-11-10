@@ -1,16 +1,14 @@
 /**
- * Problema 1: verifica se S_line é subsequência de S (greedy). O(n)
+ * Algoritmo Problema 1: verifica se S_line é subsequência de S (greedy). O(n)
  */
 public class VerificaSubsequencia {
     // Elementos de S visitados na última chamada
     static int iteracoes;
 
-    // Retorna quantas iterações a última chamada de hasTrend fez
     static int getIteracoes(){
         return iteracoes;
     }
 
-    // Retorna true se S_line é subsequência de S
     static boolean hasTrend(String[] S, String[] S_line){
         iteracoes = 0;
 

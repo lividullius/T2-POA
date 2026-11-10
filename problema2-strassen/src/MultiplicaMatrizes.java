@@ -1,16 +1,14 @@
 /**
- * Problema 2: multiplicação de matrizes pelo algoritmo de Strassen. O(n^2,81)
+ * Algoritmo Problema 2: multiplicação de matrizes pelo algoritmo de Strassen. O(n^2,81)
  */
 public class MultiplicaMatrizes {
     // Multiplicações escalares feitas na última chamada
     static int iteracoes;
 
-    // Retorna quantas multiplicações escalares a última chamada de multiply fez
     static int getIteracoes(){
         return iteracoes;
     }
 
-    // Retorna A x B (null se as dimensões forem incompatíveis)
     static int[][] multiply(int[][] A, int[][] B){
         iteracoes = 0;
 
@@ -50,7 +48,6 @@ public class MultiplicaMatrizes {
         return C;
     }
 
-    // Multiplica A e B recursivamente pelo método de Strassen
     // A e B devem ser n x n, com n potência de 2
     private static int[][] strassen(int[][] A, int[][] B){
         int n = A.length;
@@ -102,7 +99,7 @@ public class MultiplicaMatrizes {
         return C;
     }
 
-    // Retorna o quadrante tamanho x tamanho de M que começa em (linha, coluna)
+    // Copia o quadrante tamanho x tamanho que começa em (linha, coluna)
     private static int[][] subMatriz(int[][] M, int linha, int coluna, int tamanho){
         int[][] sub = new int[tamanho][tamanho];
         for (int i = 0; i < tamanho; i++) {
@@ -113,7 +110,6 @@ public class MultiplicaMatrizes {
         return sub;
     }
 
-    // Retorna X + Y, elemento a elemento
     private static int[][] soma(int[][] X, int[][] Y){
         int n = X.length;
         int[][] R = new int[n][n];
@@ -125,7 +121,6 @@ public class MultiplicaMatrizes {
         return R;
     }
 
-    // Retorna X - Y, elemento a elemento
     private static int[][] subtrai(int[][] X, int[][] Y){
         int n = X.length;
         int[][] R = new int[n][n];
