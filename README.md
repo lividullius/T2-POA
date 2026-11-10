@@ -9,7 +9,7 @@ T2-POA/
 │   └── src/                   # boolean hasTrend(String[] S, String[] S_line)
 ├── problema2-strassen/        # Problema 2: multiplicação de matrizes de Strassen (divisão e conquista)
 │   └── src/                   # int[][] multiply(int[][] A, int[][] B)
-└── relatorio/                 # Relatório em Word (capa, problema 1, problema 2)
+└── relatorio/                 # Relatório em pdf (capa, problema 1, problema 2)
 ```
 
 ## Como compilar e executar
@@ -35,5 +35,5 @@ java -cp bin Main
 Os arquivos `.class` são gerados na pasta `bin/` de cada problema (e ignorados pelo git).
 
 ## Entregáveis
-1. Relatório em Word: capa com título e integrantes, resolução do problema 1 e do problema 2.
+1. Relatório em pdf: capa com título e integrantes, resolução do problema 1 e do problema 2.
 2. Código fonte comentado (compilável, respeitando as assinaturas pedidas).
